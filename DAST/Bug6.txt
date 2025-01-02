@@ -1,0 +1,10 @@
+Bug 5: Lack of encryption over HTTP.
+        •	Description: The application is accepting and processing requests over HTTP, which means that sensitive information, such as login credentials, session tokens, or personal data, may be exposed to interception during transmission
+        •	Steps to Reproduce:
+               1. Open the application in a browser or make a request using http:// (not https://).
+               2. Send a request to any endpoint that involves sensitive data, such as login or user profile submission.
+               3. Use a tool like Wireshark or mitmproxy to intercept and view the request in plaintext, showing that sensitive information is being transmitted over an unencrypted channel.        •	Expected Result: The app should include a unique anti-CSRF token in all forms and verify it on the server before processing the request.
+        •	Actual Result: Data loss, Man in the middle attack
+        •	Severity: High
+        •	Risk Score: 8/10 (High, as it is essential protect the data)
+        •	Suggested Fix: Ensure your SSL/TLS configuration follows best practices

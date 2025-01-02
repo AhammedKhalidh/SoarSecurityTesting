@@ -1,0 +1,12 @@
+Bug 2: Weak Password Handling in /client_registration
+    •	Description: If the app does not enforce strong password policies (e.g., length, complexity), it can lead to weak user passwords that are easy to guess or crack. If the application stores passwords insecurely (e.g., plain text), attackers who gain access to the database could easily compromise accounts.
+    •	Steps to Reproduce:
+        1.	Navigate to /client_registration.
+        2.	Enter a weak password, such as 12345 or password.
+        3.	Submit the form.
+        
+    •	Expected Result: The app should enforce a strong password policy (e.g., at least 8 characters, must include numbers, special characters, and uppercase letters).
+    •	Actual Result: If weak passwords are accepted, this creates a vulnerability for brute-force attacks.
+    •	Severity: Medium
+    •	Risk Score: 6/10 (Medium risk if password hashing is secure, but weak passwords still leave the system vulnerable to brute-force attacks)
+    •	Suggested Fix: Implement password strength checks and store passwords using a strong hashing algorithm such as bcrypt.

@@ -1,0 +1,898 @@
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\rich\logging.py:143:12        
+142                 assert exc_type is not None
+143                 assert exc_value is not None
+144                 traceback = Traceback.from_exception(
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\rich\markdown.py:270:8        
+269         def on_child_close(self, context: MarkdownContext, child: MarkdownElement) -> bool:    
+270             assert isinstance(child, TableRowElement)
+271             self.row = child
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\rich\markdown.py:282:8        
+281         def on_child_close(self, context: MarkdownContext, child: MarkdownElement) -> bool:    
+282             assert isinstance(child, TableRowElement)
+283             self.rows.append(child)
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\rich\markdown.py:294:8        
+293         def on_child_close(self, context: MarkdownContext, child: MarkdownElement) -> bool:    
+294             assert isinstance(child, TableDataElement)
+295             self.cells.append(child)
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\rich\markdown.py:317:8        
+316
+317             assert justify in get_args(JustifyMethod)
+318             return cls(justify=justify)
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\rich\markdown.py:343:8        
+342         def on_child_close(self, context: MarkdownContext, child: MarkdownElement) -> bool:    
+343             assert isinstance(child, ListItem)
+344             self.items.append(child)
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\rich\markdown.py:614:20       
+613                         element = context.stack.pop()
+614                         assert isinstance(element, Link)
+615                         link_style = console.get_style("markdown.link", default="none")        
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\rich\pretty.py:198:4
+197         console = console or get_console()
+198         assert console is not None
+199
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\rich\pretty.py:203:12
+202             if value is not None:
+203                 assert console is not None
+204                 builtins._ = None  # type: ignore[attr-defined]
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\rich\pretty.py:516:8
+515             )
+516             assert self.node is not None
+517             return self.node.check_length(start_length, max_length)
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\rich\pretty.py:522:8
+521             node = self.node
+522             assert node is not None
+523             whitespace = self.whitespace
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\rich\pretty.py:524:8
+523             whitespace = self.whitespace
+524             assert node.children
+525             if node.key_repr:
+
+--------------------------------------------------
+>> Issue: [B110:try_except_pass] Try, Except, Pass detected.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b110_try_except_pass.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\rich\pretty.py:661:12
+660                         rich_repr_result = obj.__rich_repr__()
+661                 except Exception:
+662                     pass
+663
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\rich\progress.py:1093:8       
+1092        ) -> None:
+1093            assert refresh_per_second > 0, "refresh_per_second must be > 0"
+1094            self._lock = RLock()
+
+--------------------------------------------------
+>> Issue: [B311:blacklist] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+   Severity: Low   Confidence: High
+   CWE: CWE-330 (https://cwe.mitre.org/data/definitions/330.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/blacklists/blacklist_calls.html#b311-random   
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\rich\progress.py:1714:15      
+1713                time.sleep(0.01)
+1714                if random.randint(0, 100) < 1:
+1715                    progress.log(next(examples))
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\rich\prompt.py:222:8
+221             """
+222             assert self.choices is not None
+223             if self.case_sensitive:
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\rich\segment.py:171:8
+170             text, style, control = self
+171             assert cut >= 0
+172
+
+--------------------------------------------------
+>> Issue: [B311:blacklist] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+   Severity: Low   Confidence: High
+   CWE: CWE-330 (https://cwe.mitre.org/data/definitions/330.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/blacklists/blacklist_calls.html#b311-random   
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\rich\style.py:193:15
+192             self._link_id = (
+193                 f"{randint(0, 999999)}{hash(self._meta)}" if (link or meta) else ""
+194             )
+
+--------------------------------------------------
+>> Issue: [B311:blacklist] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+   Severity: Low   Confidence: High
+   CWE: CWE-330 (https://cwe.mitre.org/data/definitions/330.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/blacklists/blacklist_calls.html#b311-random   
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\rich\style.py:243:28
+242             style._meta = dumps(meta)
+243             style._link_id = f"{randint(0, 999999)}{hash(style._meta)}"
+244             style._hash = None
+
+--------------------------------------------------
+>> Issue: [B302:blacklist] Deserialization with the marshal module is possibly dangerous.
+   Severity: Medium   Confidence: High
+   CWE: CWE-502 (https://cwe.mitre.org/data/definitions/502.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/blacklists/blacklist_calls.html#b302-marshal  
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\rich\style.py:475:66
+474             """Get meta information (can not be changed after construction)."""
+475             return {} if self._meta is None else cast(Dict[str, Any], loads(self._meta))       
+476
+
+--------------------------------------------------
+>> Issue: [B311:blacklist] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+   Severity: Low   Confidence: High
+   CWE: CWE-330 (https://cwe.mitre.org/data/definitions/330.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/blacklists/blacklist_calls.html#b311-random   
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\rich\style.py:490:28
+489             style._link = self._link
+490             style._link_id = f"{randint(0, 999999)}" if self._link else ""
+491             style._null = False
+
+--------------------------------------------------
+>> Issue: [B311:blacklist] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+   Severity: Low   Confidence: High
+   CWE: CWE-330 (https://cwe.mitre.org/data/definitions/330.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/blacklists/blacklist_calls.html#b311-random   
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\rich\style.py:642:28
+641             style._link = self._link
+642             style._link_id = f"{randint(0, 999999)}" if self._link else ""
+643             style._hash = self._hash
+
+--------------------------------------------------
+>> Issue: [B311:blacklist] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+   Severity: Low   Confidence: High
+   CWE: CWE-330 (https://cwe.mitre.org/data/definitions/330.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/blacklists/blacklist_calls.html#b311-random   
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\rich\style.py:688:28
+687             style._link = link
+688             style._link_id = f"{randint(0, 999999)}" if link else ""
+689             style._hash = None
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\rich\syntax.py:492:20
+491                         """Split tokens to one per line."""
+492                         assert lexer  # required to make MyPy happy - we know lexer is not None at this point
+493
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\rich\text.py:908:8
+907             """
+908             assert len(character) == 1, "Character must be a string of length 1"
+909             if count:
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\rich\text.py:925:8
+924             """
+925             assert len(character) == 1, "Character must be a string of length 1"
+926             if count:
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\rich\text.py:941:8
+940             """
+941             assert len(character) == 1, "Character must be a string of length 1"
+942             if count:
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\rich\text.py:1080:8
+1079            """
+1080            assert separator, "separator must not be empty"
+1081
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\rich\traceback.py:288:16      
+287                 if not isinstance(suppress_entity, str):
+288                     assert (
+289                         suppress_entity.__file__ is not None
+290                     ), f"{suppress_entity!r} must be a module with '__file__' attribute"       
+291                     path = os.path.dirname(suppress_entity.__file__)
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\rich\traceback.py:686:16      
+685                 if excluded:
+686                     assert exclude_frames is not None
+687                     yield Text(
+
+--------------------------------------------------
+>> Issue: [B108:hardcoded_tmp_directory] Probable insecure usage of temp file/directory.
+   Severity: Medium   Confidence: Medium
+   CWE: CWE-377 (https://cwe.mitre.org/data/definitions/377.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b108_hardcoded_tmp_directory.html     
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\stevedore\tests\test_cache.py:29:50
+28              """
+29              with mock.patch.object(sys, 'executable', '/tmp/fake'):
+30                  sot = _cache.Cache()
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\stevedore\tests\test_extension.py:78:12
+77              else:
+78                  assert False, 'Failed to raise KeyError'
+79
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\stevedore\tests\test_extension.py:175:12
+174                 em.map(mapped, 1, 2, a='A', b='B')
+175                 assert False
+176             except RuntimeError:
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\stevedore\tests\test_hook.py:55:12
+54              else:
+55                  assert False, 'Failed to raise KeyError'
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\stevedore\tests\test_test_manager.py:132:8
+131             # This will raise KeyError if the names don't match
+132             assert (em[test_extension.name])
+133
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\urllib3\_collections.py:329:12
+328                 # key/value pair
+329                 assert len(vals) >= 2
+330                 if combine:
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\urllib3\http2\connection.py:260:8
+259
+260             assert status is not None
+261             return HTTP2Response(
+
+--------------------------------------------------
+>> Issue: [B110:try_except_pass] Try, Except, Pass detected.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b110_try_except_pass.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\urllib3\http2\connection.py:313:12
+312                         self.sock.sendall(data)
+313                 except Exception:
+314                     pass
+315
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\urllib3\http2\probe.py:45:12  
+44              except BaseException as e:  # Defensive:
+45                  assert not isinstance(e, KeyError)  # KeyError shouldn't be possible.
+46                  key_lock.release()
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\urllib3\response.py:289:12    
+288             if not buffer:
+289                 assert self._size == 0
+290                 return b""
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\urllib3\response.py:826:8     
+825             """
+826             assert self._fp
+827             c_int_max = 2**31 - 1
+
+--------------------------------------------------
+>> Issue: [B110:try_except_pass] Try, Except, Pass detected.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b110_try_except_pass.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\urllib3\util\connection.py:129:8
+128                 has_ipv6 = True
+129             except Exception:
+130                 pass
+131
+
+--------------------------------------------------
+>> Issue: [B311:blacklist] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+   Severity: Low   Confidence: High
+   CWE: CWE-330 (https://cwe.mitre.org/data/definitions/330.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/blacklists/blacklist_calls.html#b311-random   
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\urllib3\util\retry.py:305:29  
+304             if self.backoff_jitter != 0.0:
+305                 backoff_value += random.random() * self.backoff_jitter
+306             return float(max(0, min(self.backoff_max, backoff_value)))
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\urllib3\util\ssltransport.py:137:8
+136             reading = "r" in mode or not writing
+137             assert reading or writing
+138             binary = "b" in mode
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\urllib3\util\ssltransport.py:160:12
+159             else:
+160                 assert writing
+161                 buffer = io.BufferedWriter(raw, buffering)
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\werkzeug\_internal.py:39:4    
+38          env = getattr(obj, "environ", obj)
+39          assert isinstance(
+40              env, dict
+41          ), f"{type(obj).__name__!r} is not a WSGI environment (has to be a dict)"
+42          return env
+
+--------------------------------------------------
+>> Issue: [B404:blacklist] Consider possible security implications associated with the subprocess module.
+   Severity: Low   Confidence: High
+   CWE: CWE-78 (https://cwe.mitre.org/data/definitions/78.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/blacklists/blacklist_imports.html#b404-import-subprocess
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\werkzeug\_reloader.py:5:0     
+4       import os
+5       import subprocess
+6       import sys
+
+--------------------------------------------------
+>> Issue: [B603:subprocess_without_shell_equals_true] subprocess call - check for execution of untrusted input.
+   Severity: Low   Confidence: High
+   CWE: CWE-78 (https://cwe.mitre.org/data/definitions/78.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b603_subprocess_without_shell_equals_true.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\werkzeug\_reloader.py:275:24  
+274                 new_environ["WERKZEUG_RUN_MAIN"] = "true"
+275                 exit_code = subprocess.call(args, env=new_environ, close_fds=False)
+276
+
+--------------------------------------------------
+>> Issue: [B110:try_except_pass] Try, Except, Pass detected.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b110_try_except_pass.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\werkzeug\datastructures\file_storage.py:142:8
+141                 self.stream.close()
+142             except Exception:
+143                 pass
+144
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\werkzeug\datastructures\range.py:178:8
+177             """Simple method to update the ranges."""
+178             assert http.is_byte_range_valid(start, stop, length), "Bad range provided"
+179             self._units: str | None = units
+
+--------------------------------------------------
+>> Issue: [B324:hashlib] Use of weak SHA1 hash for security. Consider usedforsecurity=False        
+   Severity: High   Confidence: High
+   CWE: CWE-327 (https://cwe.mitre.org/data/definitions/327.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b324_hashlib.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\werkzeug\debug\__init__.py:45:11
+44      def hash_pin(pin: str) -> str:
+45          return hashlib.sha1(f"{pin} added salt".encode("utf-8", "replace")).hexdigest()[:12]   
+46
+
+--------------------------------------------------
+>> Issue: [B404:blacklist] Consider possible security implications associated with the subprocess module.
+   Severity: Low   Confidence: High
+   CWE: CWE-78 (https://cwe.mitre.org/data/definitions/78.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/blacklists/blacklist_imports.html#b404-import-subprocess
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\werkzeug\debug\__init__.py:88:12
+87                  # https://github.com/pallets/werkzeug/issues/925
+88                  from subprocess import PIPE
+89                  from subprocess import Popen
+
+--------------------------------------------------
+>> Issue: [B404:blacklist] Consider possible security implications associated with the subprocess module.
+   Severity: Low   Confidence: High
+   CWE: CWE-78 (https://cwe.mitre.org/data/definitions/78.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/blacklists/blacklist_imports.html#b404-import-subprocess
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\werkzeug\debug\__init__.py:89:12
+88                  from subprocess import PIPE
+89                  from subprocess import Popen
+90
+
+--------------------------------------------------
+>> Issue: [B607:start_process_with_partial_path] Starting a process with a partial executable path 
+   Severity: Low   Confidence: High
+   CWE: CWE-78 (https://cwe.mitre.org/data/definitions/78.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b607_start_process_with_partial_path.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\werkzeug\debug\__init__.py:91:19
+90
+91                  dump = Popen(
+92                      ["ioreg", "-c", "IOPlatformExpertDevice", "-d", "2"], stdout=PIPE
+93                  ).communicate()[0]
+94                  match = re.search(b'"serial-number" = <([^>]+)', dump)
+
+--------------------------------------------------
+>> Issue: [B603:subprocess_without_shell_equals_true] subprocess call - check for execution of untrusted input.
+   Severity: Low   Confidence: High
+   CWE: CWE-78 (https://cwe.mitre.org/data/definitions/78.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b603_subprocess_without_shell_equals_true.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\werkzeug\debug\__init__.py:91:19
+90
+91                  dump = Popen(
+92                      ["ioreg", "-c", "IOPlatformExpertDevice", "-d", "2"], stdout=PIPE
+93                  ).communicate()[0]
+94                  match = re.search(b'"serial-number" = <([^>]+)', dump)
+
+--------------------------------------------------
+>> Issue: [B324:hashlib] Use of weak SHA1 hash for security. Consider usedforsecurity=False        
+   Severity: High   Confidence: High
+   CWE: CWE-327 (https://cwe.mitre.org/data/definitions/327.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b324_hashlib.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\werkzeug\debug\__init__.py:196:8
+195
+196         h = hashlib.sha1()
+197         for bit in chain(probably_public_bits, private_bits):
+
+--------------------------------------------------
+>> Issue: [B102:exec_used] Use of exec detected.
+   Severity: Medium   Confidence: High
+   CWE: CWE-78 (https://cwe.mitre.org/data/definitions/78.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b102_exec_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\werkzeug\debug\console.py:177:12
+176             try:
+177                 exec(code, self.locals)
+178             except Exception:
+
+--------------------------------------------------
+>> Issue: [B110:try_except_pass] Try, Except, Pass detected.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b110_try_except_pass.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\werkzeug\debug\repr.py:260:16 
+259                         items.append((key, self.repr(getattr(obj, key))))
+260                     except Exception:
+261                         pass
+262                 title = "Details for"
+
+--------------------------------------------------
+>> Issue: [B324:hashlib] Use of weak SHA1 hash for security. Consider usedforsecurity=False        
+   Severity: High   Confidence: High
+   CWE: CWE-327 (https://cwe.mitre.org/data/definitions/327.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b324_hashlib.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\werkzeug\http.py:981:11       
+980         """
+981         return sha1(data).hexdigest()
+982
+
+--------------------------------------------------
+>> Issue: [B110:try_except_pass] Try, Except, Pass detected.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b110_try_except_pass.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\werkzeug\middleware\lint.py:223:12
+222                     )
+223                 except Exception:
+224                     pass
+225
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\werkzeug\routing\map.py:729:8 
+728             """
+729             assert self.map.redirect_defaults
+730             for r in self.map._rules_by_endpoint[rule.endpoint]:
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\werkzeug\routing\map.py:784:8 
+783                 url += f"?{self.encode_query_args(query_args)}"
+784             assert url != path, "detected invalid alias setting. No canonical URL found"       
+785             return url
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\werkzeug\routing\rules.py:701:8
+700             """Compiles the regular expression and stores it."""
+701             assert self.map is not None, "rule not bound"
+702
+
+--------------------------------------------------
+>> Issue: [B102:exec_used] Use of exec detected.
+   Severity: Medium   Confidence: High
+   CWE: CWE-78 (https://cwe.mitre.org/data/definitions/78.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b102_exec_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\werkzeug\routing\rules.py:737:8
+736             locs: dict[str, t.Any] = {}
+737             exec(code, globs, locs)
+738             return locs[name]  # type: ignore
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\werkzeug\serving.py:261:12    
+260                 nonlocal status_sent, headers_sent, chunk_response
+261                 assert status_set is not None, "write() before start_response"
+262                 assert headers_set is not None, "write() before start_response"
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\werkzeug\serving.py:262:12    
+261                 assert status_set is not None, "write() before start_response"
+262                 assert headers_set is not None, "write() before start_response"
+263                 if status_sent is None:
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\werkzeug\serving.py:302:12    
+301
+302                 assert isinstance(data, bytes), "applications must write bytes"
+303
+
+--------------------------------------------------
+>> Issue: [B110:try_except_pass] Try, Except, Pass detected.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b110_try_except_pass.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\werkzeug\serving.py:387:12    
+386                     execute(InternalServerError())
+387                 except Exception:
+388                     pass
+389
+
+--------------------------------------------------
+>> Issue: [B104:hardcoded_bind_all_interfaces] Possible binding to all interfaces.
+   Severity: Medium   Confidence: Medium
+   CWE: CWE-605 (https://cwe.mitre.org/data/definitions/605.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b104_hardcoded_bind_all_interfaces.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\werkzeug\serving.py:848:29    
+847
+848                 if self.host in {"0.0.0.0", "::"}:
+849                     messages.append(f" * Running on all addresses ({self.host})")
+
+--------------------------------------------------
+>> Issue: [B104:hardcoded_bind_all_interfaces] Possible binding to all interfaces.
+   Severity: Medium   Confidence: Medium
+   CWE: CWE-605 (https://cwe.mitre.org/data/definitions/605.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b104_hardcoded_bind_all_interfaces.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\werkzeug\serving.py:851:32    
+850
+851                     if self.host == "0.0.0.0":
+852                         localhost = "127.0.0.1"
+
+--------------------------------------------------
+>> Issue: [B311:blacklist] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+   Severity: Low   Confidence: High
+   CWE: CWE-330 (https://cwe.mitre.org/data/definitions/330.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/blacklists/blacklist_calls.html#b311-random   
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\werkzeug\test.py:68:62        
+67          if boundary is None:
+68              boundary = f"---------------WerkzeugFormPart_{time()}{random()}"
+69
+
+--------------------------------------------------
+>> Issue: [B110:try_except_pass] Try, Except, Pass detected.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b110_try_except_pass.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\werkzeug\test.py:646:8        
+645                 self.close()
+646             except Exception:
+647                 pass
+648
+
+--------------------------------------------------
+>> Issue: [B110:try_except_pass] Try, Except, Pass detected.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b110_try_except_pass.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\werkzeug\test.py:663:12       
+662                     f.close()
+663                 except Exception:
+664                     pass
+665             self.closed = True
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\yaml\parser.py:185:12
+184                 event = StreamEndEvent(token.start_mark, token.end_mark)
+185                 assert not self.states
+186                 assert not self.marks
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b101_assert_used.html
+   Location: D:\Khalidh\New folder\Soar_Test\.venv\Lib\site-packages\yaml\parser.py:186:12
+185                 assert not self.states
+186                 assert not self.marks
+187                 self.state = None
+
+--------------------------------------------------
+>> Issue: [B404:blacklist] Consider possible security implications associated with the subprocess module.
+   Severity: Low   Confidence: High
+   CWE: CWE-78 (https://cwe.mitre.org/data/definitions/78.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/blacklists/blacklist_imports.html#b404-import-subprocess
+   Location: D:\Khalidh\New folder\Soar_Test\task.py:6:0
+5       import json
+6       import subprocess  # For executing a shell command
+7       import os
+
+--------------------------------------------------
+>> Issue: [B105:hardcoded_password_string] Possible hardcoded password: '123456'
+   Severity: Low   Confidence: Medium
+   CWE: CWE-259 (https://cwe.mitre.org/data/definitions/259.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b105_hardcoded_password_string.html   
+   Location: D:\Khalidh\New folder\Soar_Test\task.py:20:13
+19      def generateJWT(payload):
+20          secret = '123456'
+21          algorithm = 'HS256'
+
+--------------------------------------------------
+>> Issue: [B105:hardcoded_password_string] Possible hardcoded password: '123456'
+   Severity: Low   Confidence: Medium
+   CWE: CWE-259 (https://cwe.mitre.org/data/definitions/259.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b105_hardcoded_password_string.html   
+   Location: D:\Khalidh\New folder\Soar_Test\task.py:28:13
+27      def decodeNoneJwt(token):
+28          secret = '123456'
+29          algorithm = 'HS256'
+
+--------------------------------------------------
+>> Issue: [B105:hardcoded_password_string] Possible hardcoded password: ''
+   Severity: Low   Confidence: Medium
+   CWE: CWE-259 (https://cwe.mitre.org/data/definitions/259.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b105_hardcoded_password_string.html   
+   Location: D:\Khalidh\New folder\Soar_Test\task.py:53:73
+52          phone = request.form['phone']
+53          if fullName != '' and userName != '' and email != '' and password != '' and phone != '':
+54              # Check if email already exist
+
+--------------------------------------------------
+>> Issue: [B608:hardcoded_sql_expressions] Possible SQL injection vector through string-based query construction.
+   Severity: Medium   Confidence: Low
+   CWE: CWE-89 (https://cwe.mitre.org/data/definitions/89.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b608_hardcoded_sql_expressions.html   
+   Location: D:\Khalidh\New folder\Soar_Test\task.py:57:12
+56              dbCursor = dbConn.cursor()
+57              q = 'select userName from users where email = "' + email + '"'
+58              dbData = dbCursor.execute(q).fetchall()
+
+--------------------------------------------------
+>> Issue: [B608:hardcoded_sql_expressions] Possible SQL injection vector through string-based query construction.
+   Severity: Medium   Confidence: Low
+   CWE: CWE-89 (https://cwe.mitre.org/data/definitions/89.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b608_hardcoded_sql_expressions.html   
+   Location: D:\Khalidh\New folder\Soar_Test\task.py:77:12
+76          password = request.form['password']
+77          qMail = 'select privillage from users where email = "' + email +'" and password = "' + password + '"'
+78          qUser = 'select privillage from users where userName = "' + userName +'"'
+
+--------------------------------------------------
+>> Issue: [B608:hardcoded_sql_expressions] Possible SQL injection vector through string-based query construction.
+   Severity: Medium   Confidence: Low
+   CWE: CWE-89 (https://cwe.mitre.org/data/definitions/89.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b608_hardcoded_sql_expressions.html   
+   Location: D:\Khalidh\New folder\Soar_Test\task.py:78:12
+77          qMail = 'select privillage from users where email = "' + email +'" and password = "' + password + '"'
+78          qUser = 'select privillage from users where userName = "' + userName +'"'
+79          dbConn = get_db_connection()
+
+--------------------------------------------------
+>> Issue: [B608:hardcoded_sql_expressions] Possible SQL injection vector through string-based query construction.
+   Severity: Medium   Confidence: Low
+   CWE: CWE-89 (https://cwe.mitre.org/data/definitions/89.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b608_hardcoded_sql_expressions.html   
+   Location: D:\Khalidh\New folder\Soar_Test\task.py:115:31
+114             data = decodeNoneJwt(token)
+115             updatePassByUsername = 'update users set password = "' + newPassword + '" where userName = "' + data['userName'] + '"'
+116             updatePassByEmail = 'update users set password = "' + newPassword + '" where userName = "' + data['email'] + '"'
+
+--------------------------------------------------
+>> Issue: [B608:hardcoded_sql_expressions] Possible SQL injection vector through string-based query construction.
+   Severity: Medium   Confidence: Low
+   CWE: CWE-89 (https://cwe.mitre.org/data/definitions/89.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b608_hardcoded_sql_expressions.html   
+   Location: D:\Khalidh\New folder\Soar_Test\task.py:116:28
+115             updatePassByUsername = 'update users set password = "' + newPassword + '" where userName = "' + data['userName'] + '"'
+116             updatePassByEmail = 'update users set password = "' + newPassword + '" where userName = "' + data['email'] + '"'
+117             selectQ = 'select privillage from users where userName = "{userName}" and email = "{email}" and password = "{password}"'.format(userName = data['userName'],email=data['email'],password = currentPassword)
+
+--------------------------------------------------
+>> Issue: [B608:hardcoded_sql_expressions] Possible SQL injection vector through string-based query construction.
+   Severity: Medium   Confidence: Low
+   CWE: CWE-89 (https://cwe.mitre.org/data/definitions/89.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b608_hardcoded_sql_expressions.html   
+   Location: D:\Khalidh\New folder\Soar_Test\task.py:117:18
+116             updatePassByEmail = 'update users set password = "' + newPassword + '" where userName = "' + data['email'] + '"'
+117             selectQ = 'select privillage from users where userName = "{userName}" and email = "{email}" and password = "{password}"'.format(userName = data['userName'],email=data['email'],password = currentPassword)
+118             #Database
+
+--------------------------------------------------
+>> Issue: [B605:start_process_with_a_shell] Starting a process with a shell, possible injection detected, security issue.
+   Severity: High   Confidence: High
+   CWE: CWE-78 (https://cwe.mitre.org/data/definitions/78.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b605_start_process_with_a_shell.html  
+   Location: D:\Khalidh\New folder\Soar_Test\task.py:156:23
+155                 cmd = 'ping -c 1 '+ source
+156                 response = os.system(cmd)
+157                 print(response)
+
+--------------------------------------------------
+>> Issue: [B110:try_except_pass] Try, Except, Pass detected.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b110_try_except_pass.html
+   Location: D:\Khalidh\New folder\Soar_Test\task.py:158:8
+157                 print(response)
+158             except:
+159                 pass
+160
+
+--------------------------------------------------
+>> Issue: [B113:request_without_timeout] Call to requests without timeout
+   Severity: Medium   Confidence: Low
+   CWE: CWE-400 (https://cwe.mitre.org/data/definitions/400.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.0/plugins/b113_request_without_timeout.html     
+   Location: D:\Khalidh\New folder\Soar_Test\task.py:161:15
+160
+161             data = requests.get(source).content
+162             jsonData = {}
+
+--------------------------------------------------

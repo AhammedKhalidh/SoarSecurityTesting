@@ -1,0 +1,12 @@
+Bug 1: SQL Injection Risk in /client_registration
+
+    •	Description: SQL injection vulnerabilities occur when user inputs are directly incorporated into SQL queries without proper sanitization. If the application doesn't properly escape inputs, an attacker could manipulate the SQL query to execute arbitrary commands.
+    •	Steps to Reproduce:
+            1.	Navigate to /client_registration.
+            2.	In the username or email field, input: test' OR 1=1 --.
+            3.	Submit the registration form.
+    •	Expected Result: The app should reject the input as invalid or safely handle it by escaping characters that could be part of an SQL injection attack.
+    •	Actual Result: If not properly sanitized, the app could allow SQL commands to execute, bypassing registration validation.
+    •	Severity: High
+    •	Risk Score: 8.5/10 (High risk because SQL injection can lead to unauthorized access to data, user information leakage, or database manipulation)
+    •	Suggested Fix: Use parameterized queries or ORM (Object-Relational Mapping) like SQLAlchemy to avoid SQL injection.
