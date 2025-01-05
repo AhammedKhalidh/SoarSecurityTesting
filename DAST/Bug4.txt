@@ -1,0 +1,10 @@
+Bug 4: Insecure Password Storage in /client_registration and /client_login
+    •	Description: Storing passwords as plain text or using weak hashing algorithms (e.g., MD5, SHA1) is a major security vulnerability. If an attacker gains access to the database, they can easily extract and misuse user credentials.
+    •	Steps to Reproduce:
+            1.	Register a new user via /client_registration.
+            2.	Inspect the database (if accessible) or the app's code to see how the password is stored.
+    •	Expected Result: Passwords should be hashed using a strong algorithm such as bcrypt or Argon2, and the plain-text password should never be stored.
+    •	Actual Result: If the app stores passwords in plain text or with weak hashing, attackers who breach the database can retrieve passwords directly.
+    •	Severity: Critical
+    •	Risk Score: 9/10 (Critical, because gaining access to the database can allow attackers to read and misuse user passwords)
+    •	Suggested Fix: Use a secure hashing algorithm such as bcrypt, scrypt, or Argon2 for password hashing. Never store passwords in plain text.

@@ -1,0 +1,10 @@
+Bug 3: No Rate Limiting in /client_registration and /client_login
+    •	Description: Without rate limiting, both the registration and login endpoints could be vulnerable to brute-force attacks, where attackers repeatedly try various combinations of usernames and passwords in an attempt to guess valid credentials.
+    •	Steps to Reproduce:
+            1.	Continuously submit multiple registration or login requests with random data.
+            2.	Observe if the application responds without any delays or blocks.
+    •	Expected Result: The app should impose rate limiting on requests to /client_registration and /client_login to prevent excessive requests from a single IP within a short time window.
+    •	Actual Result: If no rate limiting is implemented, attackers can perform brute-force attempts without restriction.
+    •	Severity: High
+    •	Risk Score: 7/10 (High risk, especially for login, as it enables attackers to perform password cracking attempts)
+    •	Suggested Fix: Implement rate limiting using Flask extensions like Flask-Limiter to restrict the number of requests a user or IP address can make to the registration and login endpoints.

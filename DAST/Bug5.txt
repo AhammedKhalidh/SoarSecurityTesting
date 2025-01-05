@@ -1,0 +1,12 @@
+Bug 5: No CSRF Protection on /client_registration and /client_login
+        •	Description: Cross-Site Request Forgery (CSRF) vulnerabilities occur when an attacker tricks a user into submitting a request that they did not intend, potentially leading to unauthorized actions like registering a user or logging in as someone else.
+        •	Steps to Reproduce:
+                1.	Inspect the form for /client_registration or /client_login.
+                2.	Check if any anti-CSRF tokens are included in the form submission (e.g., hidden fields).
+                3.	Try submitting the form from an external site with a crafted request.
+        •	Expected Result: The app should include a unique anti-CSRF token in all forms and verify it on the server before processing the request.
+        •	Actual Result: If the app does not use CSRF tokens, it is vulnerable to CSRF attacks, where attackers can manipulate users into submitting forms without their consent.
+        •	Severity: Medium
+        •	Risk Score: 6.5/10 (Medium, as CSRF vulnerabilities can be exploited if an attacker tricks users into making unwanted actions)
+        •	Suggested Fix: Implement CSRF protection using Flask extensions like Flask-WTF or Flask-SeaSurf.
+
